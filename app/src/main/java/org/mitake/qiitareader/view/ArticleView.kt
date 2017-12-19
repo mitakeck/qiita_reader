@@ -3,9 +3,7 @@ package org.mitake.qiitareader.view
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import android.widget.FrameLayout
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import org.mitake.qiitareader.R
 import org.mitake.qiitareader.model.Article
 import org.w3c.dom.Text
@@ -28,6 +26,14 @@ class ArticleView: FrameLayout {
     }
     val userNameTextView: TextView by lazy {
         findViewById<TextView>(R.id.user_name_text_view)
+    }
+
+    val queryEditText: EditText by lazy {
+        findViewById<EditText>(R.id.edit_query)
+    }
+
+    val searchButton: Button by lazy {
+        findViewById<Button>(R.id.search_button)
     }
 
     init {
